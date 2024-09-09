@@ -21,7 +21,6 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
           exercisesData = await fetchData(`https://exercisedb.p.rapidapi.com/exercises/bodyPart/${bodyPart}`, exerciseOptions);
         }
       } catch (error) {
-        console.error('Failed to fetch exercises data:', error);
         exercisesData = [];
       }
 
